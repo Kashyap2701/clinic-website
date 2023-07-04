@@ -53,7 +53,7 @@ const HeadingSection = () => {
       <MainSectionContainer>
         <MainSectionTextContainer>
           <MainSectionTitle>
-            Welcome to Our <span>Physiotheraputic Clinic</span>
+            Welcome to <span>The Physiotheraputic Clinic</span>
           </MainSectionTitle>
           <MainSectionSubtitle>
             we will help you to feel better and enjoy every single day.

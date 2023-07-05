@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { Section, SectionContainer, SectionTitle } from "../Util/CommonStyle";
-import doctor1 from "../assets/doctor1.jpeg";
-import doctor2 from "../assets/doctor2.jpeg";
 import doctor3 from "../assets/doctor3.png";
 
 const StaffContainer = styled.div`
@@ -44,20 +42,8 @@ const Experts = () => {
   const staffMembers = [
     {
       id: 1,
-      name: "John Doe",
-      position: "Dentist",
-      avatar: doctor1,
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-      position: "Physiotheraphy",
-      avatar: doctor2,
-    },
-    {
-      id: 3,
-      name: "Dr. Pradhyuman J. Patel",
-      position: "B.P.T GSCPT(GPC-14456)",
+      name: "Dr. Pradhyuman Patel",
+      position: "Physiotherapist",
       avatar: doctor3,
     },
   ];

@@ -22,18 +22,24 @@ const MainSectionTextContainer = styled.div`
 
 const MainSectionTitle = styled.h1`
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 3em;
   margin-bottom: 2rem;
   span {
     color: var(--secondary-color);
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 2em;
   }
 `;
 
 const MainSectionSubtitle = styled.h3`
   color: #777777;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 400;
   margin-bottom: 2.5rem;
+  @media screen and (max-width: 450px) {
+    font-size: 1em;
+  }
 `;
 
 const MainSectionImage = styled.img`
@@ -44,6 +50,7 @@ const MainSectionImage = styled.img`
 
   @media screen and (max-width: 768px) {
     margin-top: 2rem;
+    max-width: 300px;
   }
 `;
 

@@ -53,6 +53,9 @@ const FooterTitle = styled.h3`
   font-weight: bold;
   margin-bottom: 20px;
   color: #001a79;
+  @media screen and (max-width: 768px) {
+    align-self: center;
+  }
 `;
 
 const ContactInfo = styled.div`

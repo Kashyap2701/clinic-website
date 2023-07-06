@@ -8,6 +8,7 @@ import {
 import { IoIosMail } from "react-icons/io";
 import { IoCall, IoLocationSharp } from "react-icons/io5";
 import { Section, SectionContainer } from "../Util/CommonStyle";
+import { Link } from "react-router-dom";
 
 const FooterGrid = styled.div`
   display: flex;
@@ -29,7 +30,6 @@ const FooterColumn = styled.div`
 const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-items: start; */
 `;
 
 const FooterLink = styled.a`
@@ -151,10 +151,18 @@ const Footer = () => {
           <FooterColumn>
             <FooterTitle>Quick Links</FooterTitle>
             <FooterLinks>
-              <FooterLink href="/">Home</FooterLink>
-              <FooterLink href="/blogs">Blogs & Articals</FooterLink>
-              <FooterLink href="/about">About Us</FooterLink>
-              <FooterLink href="/contact">Contact Us</FooterLink>
+              <FooterLink>
+                <Link to="/">Home</Link>
+              </FooterLink>
+              <FooterLink>
+                <Link to="/blogs">Blogs & Articles</Link>
+              </FooterLink>
+              <FooterLink>
+                <Link to="/about-us">About Us</Link>
+              </FooterLink>
+              <FooterLink>
+                <Link to="/contact-us">Contact Us</Link>
+              </FooterLink>
             </FooterLinks>
           </FooterColumn>
           {/* ---------------Location Map--------------- */}
@@ -171,13 +179,13 @@ const Footer = () => {
         </FooterGrid>
         {/* -----------------Social Links--------------- */}
         <SocialLinks>
-          <SocialLink href="#">
+          <SocialLink>
             <BiLogoFacebookCircle />
           </SocialLink>
-          <SocialLink href="#">
+          <SocialLink>
             <BiLogoInstagramAlt />
           </SocialLink>
-          <SocialLink href="#">
+          <SocialLink>
             <BiLogoWhatsapp />
           </SocialLink>
         </SocialLinks>

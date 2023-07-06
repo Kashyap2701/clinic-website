@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
@@ -90,16 +91,24 @@ const Navbar = () => {
         <Logo src={logo} alt="Logo" />
         <NavLinks isMobileMenuOpen={isMobileMenuOpen}>
           <NavLink>
-            <NavLinkText href="#">Home</NavLinkText>
+            <NavLinkText>
+              <Link to="/">Home</Link>
+            </NavLinkText>
           </NavLink>
           <NavLink>
-            <NavLinkText href="#">Blogs & Articles</NavLinkText>
+            <NavLinkText>
+              <Link to="/blogs">Blogs & Articles</Link>
+            </NavLinkText>
           </NavLink>
           <NavLink>
-            <NavLinkText href="#">About Us</NavLinkText>
+            <NavLinkText>
+              <Link to="/about-us">About Us</Link>
+            </NavLinkText>
           </NavLink>
           <NavLink>
-            <NavLinkText href="#">Contact Us</NavLinkText>
+            <NavLinkText>
+              <Link to="/contact-us">Contact Us</Link>
+            </NavLinkText>
           </NavLink>
         </NavLinks>
         <HamburgerIcon onClick={handleMobileMenuToggle}>

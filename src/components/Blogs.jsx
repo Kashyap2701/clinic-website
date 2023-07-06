@@ -15,14 +15,14 @@ import { Section, SectionContainer, SectionTitle } from "../Util/CommonStyle";
 //   margin-bottom: 20px;
 // `;
 
-const CardContainer = styled.div`
+export const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 `;
 
-const Card = styled.div`
+export const Card = styled.div`
   width: 400px;
   background-color: #ffffff;
   padding: 20px;
@@ -32,7 +32,7 @@ const Card = styled.div`
   text-align: center;
 `;
 
-const CardImage = styled.img`
+export const CardImage = styled.img`
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -40,12 +40,12 @@ const CardImage = styled.img`
   margin-bottom: 10px;
 `;
 
-const CardTitle = styled.h3`
+export const CardTitle = styled.h3`
   font-size: 18px;
   margin-bottom: 10px;
 `;
 
-const CardDescription = styled.p`
+export const CardDescription = styled.p`
   font-size: 16px;
   color: #888888;
 `;

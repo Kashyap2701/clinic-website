@@ -1,5 +1,10 @@
-import styled from "styled-components";
 import { Section, SectionContainer, SectionTitle } from "../Util/CommonStyle";
+import {
+  ServicesContainer,
+  ServiceItem,
+  ServiceTitle,
+  ServiceIcon,
+} from "../CSS/StyledComponents";
 import physicaltherapy from "../assets/physical-therapy.png";
 import jointPain from "../assets/broken-bone.png";
 import neurology from "../assets/neurology.png";
@@ -8,33 +13,6 @@ import parkinson from "../assets/parkinson.png";
 import rehabilitation from "../assets/rehabilitation.png";
 import arthritis from "../assets/arthritis.png";
 import cerebral from "../assets/cerebral.png";
-
-const ServicesContainer = styled.div`
-  max-width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 1rem;
-  justify-content: center;
-`;
-
-const ServiceItem = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 0.5rem;
-`;
-
-const ServiceIcon = styled.img`
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  -webkit-user-drag: none;
-`;
-
-const ServiceTitle = styled.h3`
-  font-size: 18px;
-  font-weight: light;
-`;
 
 const Services = () => {
   // Example services data

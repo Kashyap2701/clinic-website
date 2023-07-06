@@ -6,7 +6,7 @@ import image2 from "../assets/ClinicPhoto2.jpg";
 import image3 from "../assets/ClinicPhoto3.jpg";
 import image4 from "../assets/ClinicPhoto4.jpg";
 import image5 from "../assets/ClinicPhoto5.jpg";
-import ImageGallery from "./ImageGallery";
+import ImageGallery from "../components/ImageGallery";
 
 const AboutUsSection = styled.section`
   padding: 3rem;

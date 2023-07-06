@@ -1,41 +1,12 @@
-import styled from "styled-components";
 import { Section, SectionContainer, SectionTitle } from "../Util/CommonStyle";
+import {
+  StaffCard,
+  StaffContainer,
+  StaffPosition,
+  StaffAvatar,
+  StaffName,
+} from "../CSS/StyledComponents";
 import doctor3 from "../assets/doctor3.png";
-
-const StaffContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-
-const StaffCard = styled.div`
-  width: 250px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-radius: 1rem;
-`;
-
-const StaffAvatar = styled.img`
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  object-fit: cover;
-  object-position: 0% 0%;
-`;
-
-const StaffName = styled.h3`
-  font-size: 18px;
-  margin-bottom: 0.5rem;
-`;
-
-const StaffPosition = styled.p`
-  font-size: 16px;
-  color: #888888;
-`;
 
 const Experts = () => {
   // Example staff data

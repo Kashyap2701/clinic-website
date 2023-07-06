@@ -1,65 +1,17 @@
-import styled from "styled-components";
 import { Section, SectionContainer, SectionTitle } from "../Util/CommonStyle";
+import {
+  ReviewContainer,
+  ReviewCard,
+  ReviewAuthor,
+  ReviewAvatar,
+  ReviewInfo,
+  ReviewPosition,
+  ReviewText,
+  RatingStars,
+  StarIcon,
+} from "../CSS/StyledComponents";
 import p1 from "../assets/P1.jpg";
 import p2 from "../assets/P2.jpg";
-
-const ReviewContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-
-const ReviewCard = styled.div`
-  width: 450px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  text-align: left;
-  border-radius: 1rem;
-`;
-
-const ReviewInfo = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const ReviewText = styled.p`
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-`;
-
-const ReviewAuthor = styled.h4`
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 1rem;
-`;
-
-const ReviewPosition = styled.p`
-  font-size: 16px;
-  color: #888888;
-`;
-
-const RatingStars = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: large;
-`;
-
-const StarIcon = styled.span`
-  color: ${({ filled }) => (filled ? "#fdd835" : "#ccc")};
-`;
-
-const ReviewAvatar = styled.img`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  object-fit: cover;
-`;
 
 const ReviewSection = () => {
   // Example reviews data
@@ -99,11 +51,11 @@ const ReviewSection = () => {
     // Other reviews...
   ];
 
+  // Function for rating star
   const renderRatingStars = (rating) => {
     const filledStars = Math.floor(rating);
     const emptyStars = 5 - filledStars;
     const stars = [];
-
     for (let i = 0; i < filledStars; i++) {
       stars.push(
         <StarIcon key={`filled-star-${i}`} filled>
@@ -111,11 +63,9 @@ const ReviewSection = () => {
         </StarIcon>
       );
     }
-
     for (let i = 0; i < emptyStars; i++) {
       stars.push(<StarIcon key={`empty-star-${i}`}>&#9733;</StarIcon>);
     }
-
     return stars;
   };
 

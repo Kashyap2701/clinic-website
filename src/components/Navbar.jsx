@@ -22,7 +22,9 @@ const Navbar = () => {
   return (
     <Container>
       <NavbarContainer>
-        <Logo src={logo} alt="Logo" />
+        <Link to="/">
+          <Logo src={logo} alt="Logo" />
+        </Link>
         <NavLinks isMobileMenuOpen={isMobileMenuOpen}>
           <NavLink>
             <NavLinkText>
